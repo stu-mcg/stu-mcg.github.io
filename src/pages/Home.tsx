@@ -3,6 +3,7 @@ import './Home.css'
 import { Link } from "react-router-dom"
 import { useEffect, useRef, useState } from 'react'
 import { fetchVideosFromYoutube } from '../utils/YoutubeFetch'
+import stuImage from '../assets/img/stu/stu1.jpeg'
 function Home() {
   const introRef = useRef<HTMLDivElement>(null)
   const videosRef = useRef<HTMLDivElement>(null)
@@ -40,7 +41,7 @@ function Home() {
           <Link to='https://www.goodreads.com/user/show/175048758-stu'>Goodreads</Link>
         </div>
         <div>
-          <img className='intro-img' src="./src/assets/img/stu/stu1.jpeg" alt="" />
+          <img className='intro-img' src={stuImage} alt="" />
         </div>
       </div>
       <div className='videos-body' ref={videosRef}>
