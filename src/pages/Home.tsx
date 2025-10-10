@@ -40,7 +40,7 @@ function Home() {
           <Link to='https://www.goodreads.com/user/show/175048758-stu'>Goodreads</Link>
         </div>
         <div>
-          <img className='intro-img' src="/src/assets/img/stu/stu1.jpeg" alt="" />
+          <img className='intro-img' src="./src/assets/img/stu/stu1.jpeg" alt="" />
         </div>
       </div>
       <div className='videos-body' ref={videosRef}>
