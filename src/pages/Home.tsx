@@ -67,7 +67,7 @@ function Home() {
         <p>
           I am a software developer interested in geospatial technology. I am experienced working in remote sensing and in creating map based user facing applications.
         </p>
-        <iframe width={800} height={400} src="https://emissions.ok.ubc.ca/hexDistances"></iframe>
+        {/* <iframe width={800} height={400} src="https://emissions.ok.ubc.ca/hexDistances"></iframe> */}
       </div>
     </>
   )
