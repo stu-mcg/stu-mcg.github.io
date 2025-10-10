@@ -43,6 +43,9 @@
 .videos-body {
   width: 66vw;
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-left: 16.5vw;
   margin-top: 15vh;
   margin-bottom: 15vh;
