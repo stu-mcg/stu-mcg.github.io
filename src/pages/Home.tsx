@@ -25,7 +25,9 @@ function Home() {
     }, []);
 
   useEffect(() => {
-    fetchVideosFromYoutube().then((videos => setYoutubeVideos(videos)))
+    fetchVideosFromYoutube().then(videos => {
+      setYoutubeVideos(videos)
+    })
   }, [])
 
   return (
@@ -64,11 +66,29 @@ function Home() {
               <iframe
                 src={`https://www.youtube-nocookie.com/embed/${video.id}?rel=0`}
                 allowFullScreen
-                title='video'
+                title={video.title}
               />
               <p>{video.description}</p>
             </div>)
           })}
+          <div>
+            <h3>Pocket Change</h3>
+            <iframe
+              src="https://www.newschoolers.com/videoembed/1080666"
+              allowFullScreen
+              title='Pocket Change'
+            />
+            <p>2022/23 Ski season @ UBCO</p>
+          </div>
+          <div>
+            <h3>MACRODOSER</h3>
+            <iframe
+              src="https://www.newschoolers.com/videoembed/1055761"
+              allowFullScreen
+              title='MACRODOSER'
+            />
+            <p>Filmed over November reading break 2022</p>
+          </div>
         </div>
       </div>
       <div className='section-body' ref={workRef}>
@@ -87,7 +107,7 @@ function Home() {
               <a href="https://emissions.ok.ubc.ca/"> here </a>
               and a set of slides about the project which
               I presented at the International Cartographic Conference are available 
-              <a href="https://docs.google.com/presentation/d/1tgKowGaL6xD99v-HvKrptNypxYmNrcgZ/edit?pli=1&slide=id.p3#slide=id.p3"> here </a>
+              <a href="https://docs.google.com/file/d/1tgKowGaL6xD99v-HvKrptNypxYmNrcgZ/"> here </a>
               .
             </p>
           </div>
@@ -104,7 +124,7 @@ function Home() {
             <h3>EarthDaily Analyitics</h3>
             <img src={edaImage}/>
             <p>
-              I completed an 8 month co-op term at EarthDaily Analytics where I works on various projects including developing an algorithm to detect
+              I completed an 8 month co-op term at EarthDaily Analytics where I worked on various projects including developing an algorithm to detect
               radio frequency interference in RADAR satellite imagery, and contributing towards the calibration and validation system of EDA's own
               thermal band satellite sensors.
             </p>
