@@ -18,7 +18,7 @@
 
 .section-body  {
   width: 66vw;
-  height: 70vh;
+  min-height: 70vh;
   margin-left: 16.5vw;
   margin-top: 15vh;
   margin-bottom: 15vh;
@@ -83,7 +83,7 @@
 .work-list {
   display: flex;
   flex-direction: row;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .work-list > div {
@@ -94,10 +94,14 @@
   flex-direction: column;
 }
 
-.work-list img, .work-list p {
+.work-list img {
   min-width: 250px;
   min-height: 140.625px;
   width: 25vw;
-  height: 14.0625vw;
   border: none;
+}
+
+.work-list p {
+  min-width: 250px;
+  min-height: 140.625px;
 }
