@@ -96,8 +96,8 @@ function Home() {
             <img src={omgImage}/>
             <p>
               I developed an application called REACT (Recording Experiences of Aquatic Concern with Technology) for the Otipemiswwak Metis Govenment 
-              (Metis nation of Alberta). The app allows users to report and view aquatic concerns such as poaching, invasive species, and Algae blooms.
-              The app is currently live but only available for use for members of the nation.
+              (Metis Nation of Alberta). The app allows users to report and view aquatic concerns such as poaching, invasive species, and Algae blooms.
+              The app is currently live but only available for the use of members of the nation.
             </p>
           </div>
           <div>
@@ -106,7 +106,7 @@ function Home() {
             <p>
               I completed an 8 month co-op term at EarthDaily Analytics where I works on various projects including developing an algorithm to detect
               radio frequency interference in RADAR satellite imagery, and contributing towards the calibration and validation system of EDA's own
-              thermal band sattelite sensors.
+              thermal band satellite sensors.
             </p>
           </div>
         </div>
