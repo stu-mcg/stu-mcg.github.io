@@ -115,7 +115,7 @@ function Home() {
             <h3>OMG REACT</h3>
             <img src={omgImage}/>
             <p>
-              I developed an application called REACT (Recording Experiences of Aquatic Concern with Technology) for the Otipemiswwak Metis Govenment 
+              I developed an application called REACT (Recording Experiences of Aquatic Concern with Technology) for the Otipemisiwak Metis Govenment 
               (Metis Nation of Alberta). The app allows users to report and view aquatic concerns such as poaching, invasive species, and Algae blooms.
               The app is currently live but only available for the use of members of the nation.
             </p>
