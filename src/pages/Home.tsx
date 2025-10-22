@@ -46,7 +46,7 @@ function Home() {
           <a onClick={() => workRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}>Work</a>
           {/* <a onClick={() => workRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}>Fun</a>
           <a onClick={() => workRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' })}>Photos</a> */}
-          <Link to='https://github.com/stu-mcg'>Github</Link>
+          <Link to='https://github.com/stu-mcg' rel="me">Github</Link>
           <Link to='https://www.instagram.com/stuuuuuuuuuuuuuuuuuu/'>Instagram</Link>
           <Link to='https://www.strava.com/athletes/31157300'>Strava</Link>
           <Link to='https://www.goodreads.com/user/show/175048758-stu'>Goodreads</Link>
