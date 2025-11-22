@@ -50,6 +50,7 @@ function Home() {
           <Link to='https://www.instagram.com/stuuuuuuuuuuuuuuuuuu/'>Instagram</Link>
           <Link to='https://www.strava.com/athletes/31157300'>Strava</Link>
           <Link to='https://www.goodreads.com/user/show/175048758-stu'>Goodreads</Link>
+          <Link to='mailto:stumcgorman@gmail.com'>stumcgorman@gmail.com</Link>
         </div>
         <div>
           <img className='intro-img' src={stuImage} alt="" />
