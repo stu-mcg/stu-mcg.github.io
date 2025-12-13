@@ -31,3 +31,11 @@ a {
 a:hover {
   color: var(--link-hover-color);
 }
+
+.section-body  {
+  width: 66vw;
+  min-height: 70vh;
+  margin-left: 16.5vw;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}

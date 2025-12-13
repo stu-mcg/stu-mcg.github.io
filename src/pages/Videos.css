@@ -1,0 +1,31 @@
+.videos-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.videos-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.videos-list > div {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  min-width: 250px;
+  max-width: 350px;
+}
+
+.videos-list iframe {
+  min-width: 250px;
+  max-width: 350px;
+  aspect-ratio: 16 / 9;
+  width: 25vw;
+  border: none;
+}

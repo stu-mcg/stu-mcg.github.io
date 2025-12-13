@@ -1,0 +1,30 @@
+.work-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.work-list > div {
+  display: flex;
+  flex-direction: row;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  min-width: 250px;
+  max-width: 400px;
+}
+
+.work-list img {
+  min-width: 250px;
+  min-height: 140.625px;
+  width: 25vw;
+  max-width: 400px;
+  border: none;
+}
+
+.work-list p {
+  min-width: 250px;
+  min-height: 140.625px;
+}

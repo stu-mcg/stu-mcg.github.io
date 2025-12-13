@@ -1,0 +1,17 @@
+ .nav-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  max-height: 20vh;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  background-color: var(--bg-color);
+  border-bottom: 1px solid var(--link-color);
+}
+
+.nav-bar a {
+  padding: 20px;
+}
