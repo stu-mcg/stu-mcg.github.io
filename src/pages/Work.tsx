@@ -1,4 +1,4 @@
-import './work.css'
+import './Work.css'
 import geoportalImage from '../assets/img/work/geoportal.png'
 import omgImage from '../assets/img/work/omg.png'
 import edaImage from '../assets/img/work/eda.png'
