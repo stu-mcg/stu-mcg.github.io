@@ -48,6 +48,15 @@ function Videos() {
           />
           <p>Filmed over November reading break 2022</p>
         </div>
+        <div>
+          <h3>Okanagan Streets 21/22</h3>
+          <iframe
+            src="https://www.newschoolers.com/videos/watch/1040174/Okanagan-streets-21-22"
+            allowFullScreen
+            title='Okanagan Streets 21/22'
+          />
+          <p>Some clips I filmed over the 2021/22 school year</p>
+        </div>
       </div>
     </div>
   </>)
