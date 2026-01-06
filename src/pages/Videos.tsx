@@ -51,7 +51,7 @@ function Videos() {
         <div>
           <h3>Okanagan Streets 21/22</h3>
           <iframe
-            src="https://www.newschoolers.com/videos/watch/1040174/Okanagan-streets-21-22"
+            src="https://www.newschoolers.com/videoembed/1040174"
             allowFullScreen
             title='Okanagan Streets 21/22'
           />
