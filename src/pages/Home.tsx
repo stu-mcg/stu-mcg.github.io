@@ -13,7 +13,7 @@ function Home() {
           <Link to='https://www.instagram.com/stuuuuuuuuuuuuuuuuuu/'>Instagram</Link>
           <Link to='https://www.strava.com/athletes/31157300'>Strava</Link>
           <Link to='https://www.goodreads.com/user/show/175048758-stu'>Goodreads</Link>
-          <Link to='mailto:stumcgorman@proton.me'>stumcgorman@gmail.com</Link>
+          <Link to='mailto:stumcgorman@proton.me'>stumcgorman@proton.me</Link>
         </div>
         <div>
           <img className='intro-img' src={stuImage} alt="" />
