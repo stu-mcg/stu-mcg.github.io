@@ -1,1 +1,1 @@
-# personal-site
+# Stu McGorman's personal site
