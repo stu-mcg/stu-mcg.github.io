@@ -7,9 +7,9 @@ function Home() {
       <div className='intro-body'>
         <div>
           <h1>Stu</h1>
-          <Link to='/videos'>Videos</Link>
-          <Link to='/work'>Work</Link>
-          <Link to='/music'>Music</Link>
+          <a href='/#/videos'>Videos</a>
+          <a href='/#/work'>Work</a>
+          <a href='/#/music'>Music</a>
           <Link to='https://github.com/stu-mcg' rel="me">Github</Link>
           <Link to='https://www.instagram.com/stuuuuuuuuuuuuuuuuuu/'>Instagram</Link>
           <Link to='https://www.strava.com/athletes/31157300'>Strava</Link>

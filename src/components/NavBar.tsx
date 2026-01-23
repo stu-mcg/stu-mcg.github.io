@@ -5,9 +5,9 @@ function NavBar() {
   return (
     <div className='nav-bar'>
       <Link to='/'>Stu</Link>
-      <Link to='/videos'>Videos</Link>
-      <Link to='/work'>Work</Link>
-      <Link to='/music'>Music</Link>
+      <a href='/#/videos'>Videos</a>
+      <a href='/#/work'>Work</a>
+      <a href='/#/music'>Music</a>
     </div>
   )
 }
