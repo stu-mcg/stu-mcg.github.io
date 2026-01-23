@@ -1,0 +1,49 @@
+.music-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.music-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.music-left,
+.music-right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.music-left img {
+  width: 80%;
+}
+
+.music-left h1 {
+  width: fit-content;
+  margin-bottom: 0;
+}
+.music-left h3 {
+  width: fit-content;
+  margin: 10px;
+}
+
+.music-right p {
+  width: fit-content;
+  margin: 5px;
+}
+
+.music-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  text-align: center;
+}
