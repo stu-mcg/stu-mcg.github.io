@@ -114,11 +114,12 @@ function Music() {
 
   const nextSong = () => {
     if(!currentAlbum) return
-    if(!currentSongIndex) return
+    if(currentSongIndex == null) return
     if(currentSongIndex + 1 >= currentAlbum?.songs.length){
       setCurrentAlbum(null)
       return
     }
+    console.log('test')
     setCurrentSongIndex(currentSongIndex + 1)
   }
 
