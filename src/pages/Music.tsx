@@ -1,4 +1,4 @@
-import './music.css'
+import './Music.css'
 import { useEffect, useRef, useState } from "react"
 import { convertXML } from "simple-xml-to-json"
 import NavBar from "../components/NavBar"
