@@ -25,3 +25,15 @@
 .home .intro-body h1 {
   margin-top: 0;
 }
+
+@media (max-width:700px) {
+  .home .intro-body {
+    flex-direction: column-reverse;;
+  }
+  .home .intro-body > div {
+    height: unset
+  }
+  .home .intro-img {
+    margin-bottom: 10vh
+  }
+}

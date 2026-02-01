@@ -3,8 +3,6 @@ import { useEffect, useRef, useState } from "react"
 import { convertXML } from "simple-xml-to-json"
 import NavBar from "../components/NavBar"
 
-// import md5 from "md5"
-
 interface Song {
   id: string
   title: string
@@ -125,27 +123,25 @@ function Music() {
 
   return <>
     <NavBar />
-    <div>
-      <div className='section-body music-body'>
-        <div className='music-columns'>
-          <div className="music-left">
-            <img src={buildNavidromUrl('getCoverArt', {id: currentAlbum?.coverArtId, size: 300})}/>
-            <h1>{currentAlbum?.title}</h1>
-            <h3>{currentAlbum?.artist}</h3>
-            <audio controls ref={audioRef} src={streamUrl ?? ''} onEnded={nextSong}/>
-          </div>
-          <div className="music-right">
-            {currentAlbum?.songs.map((song, index) => {
-              const currentSong = song.id == currentAlbum.songs[currentSongIndex ?? -1]?.id
-              if(currentSong) return  <p key={song.id}>▶︎{song.title}</p>
-              return <p key={song.id}><a onClick={() => setCurrentSongIndex(index)}>{song.title}</a></p>
-            })}
-          </div>
+    <div className='section-body music-body'>
+      <div className='music-columns'>
+        <div className="music-left">
+          { currentAlbum && <img src={buildNavidromUrl('getCoverArt', {id: currentAlbum?.coverArtId, size: 300})} alt=''/>}
+          <h1>{currentAlbum?.title ?? ' '}</h1>
+          <h3>{currentAlbum?.artist ?? ' '}</h3>
+          <audio controls ref={audioRef} src={streamUrl ?? ''} onEnded={nextSong}/>
         </div>
-        <div className='music-bottom'>
-          <p>This page streams random albums from my <a href='https://www.navidrome.org'>navidrom</a> server. If you'd like access to the my full library just ask me. At some point I might try streaming a live radio show here and/or set up curated playlists</p>
-          <a onClick={newAlbum}><h1>get a new album</h1></a>
+        <div className="music-right">
+          {currentAlbum?.songs.map((song, index) => {
+            const currentSong = song.id == currentAlbum.songs[currentSongIndex ?? -1]?.id
+            if(currentSong) return  <p key={song.id}>▶︎{song.title}</p>
+            return <p key={song.id}><a onClick={() => setCurrentSongIndex(index)}>{song.title}</a></p>
+          })}
         </div>
+      </div>
+      <div className='music-bottom'>
+        <p>This page streams random albums that I like from my <a href='https://www.navidrome.org'>navidrom</a> server. If you'd like access to the my full library just ask me. At some point I might try streaming a live radio show here and/or set up curated playlists</p>
+        <a onClick={newAlbum}><h1>get a new album</h1></a>
       </div>
     </div>
   </>
