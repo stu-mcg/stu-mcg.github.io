@@ -10,6 +10,7 @@
   justify-items: center;
   background-color: var(--bg-color);
   border-bottom: 1px solid var(--link-color);
+  z-index: 100;
 }
 
 .nav-bar a {
